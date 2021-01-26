@@ -14,9 +14,9 @@
     gap: 0px 0px;
     grid-template-areas: 
     "he he he he he"
-    "as1 t t t ."            
-    "as1 t t t ."
-    "as1 t t t ."
+    "as1 t t t se"            
+    "as1 t t t se"
+    "as1 t t t se"
     ". . . . ."
 }
  /* Grid layout för kvadraten i mitten*/
@@ -52,8 +52,13 @@ aside {
     justify-content:center;
 }
 
-#game_over {
+.game_over {
     grid-area: se;
+    color: white;
+    font-size: 50px;
+    padding-left: 25%;
+    padding-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
  button {
