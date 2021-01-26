@@ -4,20 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="grid-container">
-        <div class="tictactoe_layout"></div>
-        <div class="t1">1</div>
-        <div class="t2">2</div>
-        <div class="t3">3</div>
-        <div class="t4">4</div>
-        <div class="t5">5</div>
-        <div class="t6">6</div>
-        <div class="t7">7</div>
-        <div class="t8">8</div>
-        <div class="t9">9</div>
-    </div>
+<div class="grid-container">
+    <header>Tic Tac Toe</header>
+    <aside id="aside">
+        <button id="b1">Restart game</button>
+        <div id="score">Score</div>
+    </aside>
+        <div class="main_div">
+                <div class="all_divs" id="t1">
+                        <div class=""></div>
+                </div>
+                <div class="all_divs" id="t2">
+                        <div class=""></div>
+                </div>
+                <div class="all_divs" id="t3">
+                        <div class=""></div>
+                </div>
+                <div class="all_divs" id="t4">
+                        <div class=""></div>
+                </div>
+                <div class="all_divs" id="t5">
+                        <div class=""></div>
+                </div>
+                <div class="all_divs" id="t6">
+                        <div class=""></div>
+                </div>
+                <div class="all_divs" id="t7">
+                        <div class=""></div>
+                </div>
+                <div class="all_divs" id="t8">
+                        <div class="c"></div>
+                </div>
+                <div class="all_divs" id="t9">
+                        <div class=""></div>
+                </div>
+        </div>
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
