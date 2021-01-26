@@ -53,8 +53,6 @@ function robot_move(nummer_redan_vald) {
 
 // Den här funktioen körs när spelet är slut // 
 function spel_slut(){
-    alert("spelet är slut");
-
     var spelet_slut =document.getElementById("section")
     spelet_slut.classList.add("game_over");
 }

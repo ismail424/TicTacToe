@@ -46,7 +46,7 @@ header {
 /* css för aside */
 aside {
     grid-area: as1;
-    background-color: rgb(255, 255, 255);
+    background-color: #000;
     margin: 0px 100px 0px 100px ;
     display: flex;
     justify-content:center;
