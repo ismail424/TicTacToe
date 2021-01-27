@@ -2,6 +2,7 @@ const tile = document.querySelectorAll(".all_divs")
 var robot_score = 0;
 var du_score = 0;
 
+
 // Array med status på alla rutor // 
 let status =["", "", "",
              "", "", "",
@@ -55,7 +56,6 @@ function robot_move(nummer_redan_vald) {
         if (status[index_format] == ""){
             status[index_format] = "x";
             var element = document.getElementById("tt" + random_number);
-            console.log(random_number,element);
             element.classList.add("cross");
             //Kollar om roboten har vunnit
             if(vinst_kontroll()){
@@ -118,7 +118,7 @@ function vinst_kontroll(){
 
     if(status[6] != ""){var bottom_left = status[6];}
     else{bottom_left== "random_ovikit_sak16"}
-
+    
 
     // Kontrollerar om man har vunnit horisontellt
     if (status[1] == top_left && status[2] == top_left){return true;}
@@ -127,9 +127,10 @@ function vinst_kontroll(){
 
     //Kontrollerar om man har vunnit vertikallt
     if (status[3] == top_left && status[6] == top_left){return true; }
+
     if (status[4] == top_middle && status[7] == top_middle){return true;}
     if (status[5] == top_right && status[8] == top_right){return true;}
-
+    
 
     //Kontrollerar om man har vunnit diagonalt
     if (status[4] == top_right && status[6] == top_right){;return true;}
