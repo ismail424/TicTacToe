@@ -2,6 +2,10 @@ const tile = document.querySelectorAll(".all_divs")
 var robot_score = 0;
 var du_score = 0;
 
+// Store
+localStorage.setItem("lastname", "Smith");
+// Retrieve
+document.getElementById("result").innerHTML = localStorage.getItem("lastname");
 
 // Array med status på alla rutor // 
 let status =["", "", "",
